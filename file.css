@@ -2,6 +2,37 @@
     margin: auto;
 }
 
+.container {
+   min-width: 1300px; 
+}
+
+@media (max-width:1300px){
+    .container{
+        max-width:970px;
+    }
+    .best-selling, .all-product{
+        padding: 0px 25px;
+    }
+
+    .newsletter, .footer{
+        margin: 0px 28px;
+    }
+}
+
+@media (max-width:992px){
+    .container{
+        max-width:750px;
+    }
+
+}
+
+@media (max-width:767px){
+    .container{
+        max-width:none;
+    }
+
+}
+
 a {
     text-decoration: none;
 }
@@ -9,13 +40,14 @@ a {
 /* HEADER */
 
 .header {
+    min-width: 1300px;
     background-color: #1F1F26;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
-    width: 1300px;
+    width: 1250px;
     height: 69px;   
 }
 
@@ -52,6 +84,7 @@ a {
 /* SLOGAN*/
 
 .main, .best {
+    min-width: 1300px;
     background-color: #e5e5e5;
 }
 
@@ -101,6 +134,7 @@ a {
 /* ЗАГОЛОВКИ */
 
 h3 {
+    width: 1300px;
     font-family: 'Futura-Medium';
     font-size: 20px;
     font-style: normal;
@@ -111,6 +145,7 @@ h3 {
 }
 
 h2 {
+    width: 1300px;
     font-family: 'Futura-Bold';
     font-weight: bold;
     font-size: 36px;
@@ -406,7 +441,7 @@ h2 {
     position: relative;
     width: 1240px;
     height: 316px;
-    background: #1F1F26;
+    background-color: #1F1F26;
     margin-bottom: 130px;
     border-radius: 10px;
 }
@@ -528,6 +563,7 @@ h2 {
 }
 
 .copyright {
+    min-width: 1300px;
     height: 69px; 
     background-color: #1F1F26;
     margin-top: 100px;
@@ -551,3 +587,4 @@ h2 {
     line-height: 139%;
     color: #fff;
 }
+
